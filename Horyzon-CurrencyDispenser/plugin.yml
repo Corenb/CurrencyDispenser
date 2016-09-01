@@ -1,0 +1,22 @@
+name: CurrencyDispenser
+main: eu.horyzon.currencydispenser.CurrencyDispenser
+version: 1.0
+description: Save all currency!
+author: LLIcocoman_Hrz
+website: http://horyzon.eu
+
+commands:
+  currencydispenser:
+    description: Define the currency of a player
+    aliases: [cc, currency, cd]
+    permission: currencydispenser.command
+
+permissions:
+  currencydispenser.*:
+    description: Allows access to everything
+    default: op
+    children:
+      currencydispenser.command: true
+  currencydispenser.command:
+    description: Allow you to define the currency of a player
+    default: op
